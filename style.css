@@ -1,0 +1,63 @@
+/* Config font face */
+@font-face {
+    font-family: "khmer";
+    src: url(./fonts/Kantumruy-Bold.ttf);
+}
+
+
+
+
+/* * Universal Selector */
+*{
+
+    color:darkblue;
+    font-family: 'khmer';
+}
+/* type selector of element */
+h1{
+    color:darkmagenta;
+    text-align: center;
+}
+p{
+    color: darkgrey;
+    text-align: center;
+}
+/* class selector */
+.headingtwo{
+    color: darkgoldenrod;
+    text-align: center;
+}
+/* id selector */
+#mom{
+    color: darkorange;
+    text-align: center;
+    font-size: 20px;
+}
+article p{
+    color: red;
+}
+
+/* Important note::
+priality :-----------------    inline style < id < class < element < universal   -------------------*/
+
+article > p:first-child{
+    text-transform: uppercase;
+    color: blue;
+}
+article >p:nth-child(2){
+    text-transform: uppercase;
+    color: chartreuse;
+}
+
+/* priority css
+
+    1.!important
+    2.inline
+    3.id
+    4.class
+    5.element name
+    6.universal
+
+*/
+/* syntax css */
+/* selector name{property : value} */
